@@ -58,15 +58,41 @@ function HeaderMenu() {
 
             <NavigationMenuItem>
             <NavigationMenuTrigger>Use Cases</NavigationMenuTrigger>
-            <NavigationMenuContent>
-                <NavigationMenuLink>Link</NavigationMenuLink>
+            <NavigationMenuContent className="position:absolute">
+              <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+                <ListItem href="/optical_imaging_system" title="Optical Imaging System">
+                  Wide-field multi-spectral fluorescence microscopy
+                </ListItem>
+                <ListItem href="/optical_system_solutions" title="Optical Manipulation">
+                  Wide-field multi-spectral fluorescence microscopy
+                </ListItem>
+                <ListItem href="/light_source" title="Light Source">
+                  Wide-field multi-spectral fluorescence microscopy
+                </ListItem>
+                <ListItem href="/optical_system_solutions" title="Optical System Solutions">
+                  Wide-field multi-spectral fluorescence microscopy
+                </ListItem>
+              </ul>
             </NavigationMenuContent>
             </NavigationMenuItem>
 
             <NavigationMenuItem>
             <NavigationMenuTrigger>News</NavigationMenuTrigger>
-            <NavigationMenuContent>
-                <NavigationMenuLink>Link</NavigationMenuLink>
+            <NavigationMenuContent className="position:absolute">
+              <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+                <ListItem href="/optical_imaging_system" title="Optical Imaging System">
+                  Wide-field multi-spectral fluorescence microscopy
+                </ListItem>
+                <ListItem href="/optical_system_solutions" title="Optical Manipulation">
+                  Wide-field multi-spectral fluorescence microscopy
+                </ListItem>
+                <ListItem href="/light_source" title="Light Source">
+                  Wide-field multi-spectral fluorescence microscopy
+                </ListItem>
+                <ListItem href="/optical_system_solutions" title="Optical System Solutions">
+                  Wide-field multi-spectral fluorescence microscopy
+                </ListItem>
+              </ul>
             </NavigationMenuContent>
             </NavigationMenuItem>
 
