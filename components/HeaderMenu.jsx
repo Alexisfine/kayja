@@ -58,17 +58,19 @@ function HeaderMenu() {
     <NavigationMenu>
         <NavigationMenuList>
             <NavigationMenuItem>
-            <NavigationMenuTrigger>Home</NavigationMenuTrigger>
-            <NavigationMenuContent>
-                <NavigationMenuLink>Link</NavigationMenuLink>
-            </NavigationMenuContent>
+                <Link href="/" legacyBehavior passHref>
+                    <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                        Home
+                    </NavigationMenuLink>
+                </Link>
             </NavigationMenuItem>
 
             <NavigationMenuItem>
-            <NavigationMenuTrigger>About Us</NavigationMenuTrigger>
-            <NavigationMenuContent>
-                <NavigationMenuLink>Link</NavigationMenuLink>
-            </NavigationMenuContent>
+                <Link href="/about_us" legacyBehavior passHref>
+                    <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                        About Us
+                    </NavigationMenuLink>
+                </Link>
             </NavigationMenuItem>
 
             <NavigationMenuItem>

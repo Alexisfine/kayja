@@ -19,6 +19,11 @@ export default function RootLayout({ children }) {
             enableSystem
             disableTransitionOnChange>
           <Header/>
+          <div className='relative w-full h-screen overflow-hidden'>
+            <video src="/tissue.mp4" autoPlay muted loop
+              className='absolute top-1/2 left-1/2 min-w-full min-h-full 
+                -translate-x-1/2 -translate-y-1/2 z-[-1]'></video> 
+          </div>   
           {children}
         </ThemeProvider>
       </body>
