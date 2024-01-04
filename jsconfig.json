@@ -2,7 +2,8 @@
   "compilerOptions": {
     "paths": {
       "@/*": ["./*"],
-      "@logos/*":["./images/logos/*"]
+      "@logos/*":["./images/logos/*"],
+      "@others/*":["./images/others/*"]
     }
   }
 }
