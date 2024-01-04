@@ -4,10 +4,10 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <>
-      <video src="/tissue.mp4" autoPlay muted loop
-              className='absolute top-0 left-0 w-full h-3/4 object-cover z-0 brightness-50'/>
+    <div className='relative'>
       <MaxWidthWrapper>
+        <video src="/tissue.mp4" autoPlay muted loop
+              className='absolute top-0 left-0 w-full h-full object-cover z-0 brightness-50'/>
         <div className='py-20 mx-auto text-center flex flex-col items-center max-w-3xl'>
           <h1 className='text-4xl font-bold  text-gray-100 sm:text-6xl z-10'>
             智造开启微观世界的
@@ -26,6 +26,6 @@ export default function Home() {
           </div>
         </div>
       </MaxWidthWrapper>
-    </>
+    </div>
   )
 }
