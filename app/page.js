@@ -1,7 +1,13 @@
+'use client'
 import MaxWidthWrapper from '@/components/MaxWidthWrapper'
 import { Button, buttonVariants } from '@/components/ui/button'
 import Link from 'next/link'
-import LandingPageBackupImage from '@others/landing-video-backup.jpg'
+import AboutUs from '@/components/AboutUs'
+import {PRODUCTS } from '@/config'
+import MediumCard from '@/components/MediumCard'
+import {Swiper, SwiperSlide} from 'swiper/react'
+import 'swiper/css'
+
 export default function Home() {
   return (
     <div className='relative'>
@@ -27,7 +33,44 @@ export default function Home() {
             </div>
           </div>
         </MaxWidthWrapper>
+        <main>
+          <section className='border-t border-gray-200 bg-gray-50'>
+            <MaxWidthWrapper className="py-10">
+              <AboutUs/>
+            </MaxWidthWrapper>
+          </section>
+          <section className='px-8 sm:px-16 bg-gradient-to-r from-sky-500 via-sky-400 to-blue-300 '>
+            <MaxWidthWrapper className='pt-6'>
+            <h2 className='text-3xl font-semibold pb-5'>产品中心</h2>
+            <h3 className='text-2xl font-semibold pb-5'>提供光学操控、光学微显成像系统、光源、光学系统解决方案等高科技产品</h3>
+              <div className='flex space-x-3 overflow-scroll scrollbar-hide p-3 -m-3'>
+                  {PRODUCTS?.map(item => (
+                    <MediumCard key={item.name} img={item.img} name={item.name}/>
+                  ))}
+              </div>
+            </MaxWidthWrapper>
+          </section>
+
+          <section className='px-8 sm:px-16 bg-gradient-to-r from-sky-500 via-sky-400 to-blue-300 '>
+            <MaxWidthWrapper className='pt-6'>
+            <h2 className='text-3xl font-semibold pb-5'>应用案例</h2>
+              <div className='flex space-x-3 overflow-scroll scrollbar-hide p-3 -m-3'>
+                  {/* {PRODUCTS?.map(item => (
+                    <MediumCard key={item.name} img={item.img} name={item.name}/>
+                  ))} */}
+              </div>
+            </MaxWidthWrapper>
+          </section>
+
+          <section className='border-t border-gray-200 bg-gray-50'>
+            <MaxWidthWrapper className="py-10">
+            <h2 className='text-3xl font-semibold pb-5'>合作伙伴</h2>
+            </MaxWidthWrapper>
+          </section>
+         
+        </main>
       </div>
     </div>
   )
 }
+
