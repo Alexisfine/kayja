@@ -2,6 +2,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import { cn } from '@/lib/utils'
 import NavBar from '@/components/NavBar'
+import Footer from '@/components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
               {/* <VideoPage/>    */}
               {children}
             </div>
+            <Footer/>
           </main> 
       </body>
     </html>

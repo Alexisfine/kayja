@@ -46,7 +46,7 @@ function AboutUs() {
                     </div>
                   </div>
                   <div className="flex flex-col items-center mt-6 md:ml-4 md:mt-0 lg:ml-0 lg:mt-6 justify-center">
-                    <h3>{perk.name}</h3>
+                    <h3 className='font-semibold'>{perk.name}</h3>
                     <p className="mt-3 text-sm text-muted-foreground">
                       {perk.description}
                     </p>

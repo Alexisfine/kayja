@@ -59,3 +59,16 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Extend your Tailwind config in tailwind.config.js to include the rotate transform */
+@layer components {
+  .rotate-180 {
+    --tw-rotate: 180deg;
+  }
+  
+}
+
+/* Use the @apply directive to apply Tailwind classes in your CSS if needed */
+.AccordionTrigger[data-state='open'] .AccordionChevron {
+  @apply rotate-180;
+}

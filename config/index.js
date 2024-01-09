@@ -1,6 +1,16 @@
 import LightMicro from '@others/light-micro.jpg'
 import LightOperation from '@others/light-operation.jpg'
 import LightSource from '@others/light-source.jpg'
+import Partner1 from '@others/partner_1.png'
+import Partner2 from '@others/partner_2.png'
+import Partner3 from '@others/partner_3.png'
+import Partner4 from '@others/partner_4.png'
+import Partner5 from '@others/partner_5.png'
+import Partner6 from '@others/partner_6.png'
+import Partner7 from '@others/partner_7.png'
+import Partner8 from '@others/partner_8.png'
+import Partner9 from '@others/partner_9.png'
+import Partner10 from '@others/partner_10.png'
 
 export const NAV_MENU_ITEMS = [
     {
@@ -273,4 +283,132 @@ export const PRODUCTS = [
             },
         ]
     },
+]
+
+export const ALLPRODUCTS = [
+    {
+        name:"全息光镊SLM-HOT",
+        briefDesc: "基于扫描振镜光学元件",
+        href:"/",
+        img: LightSource,
+    },
+    {
+        name:"双光阱光镊GW-DOT",
+        briefDesc: "基于扫描振镜光学元件",
+        href:"/",
+        img: LightSource,
+    },
+    {
+        name:"四通道数字光处理投影系统FC-DLP",
+        briefDesc: "基于扫描振镜光学元件",
+        href:"/",
+        img: LightSource,
+    },
+    {
+        name:"LED光源",
+        briefDesc: "基于扫描振镜光学元件",
+        href:"/",
+        img: LightSource,
+    },
+    {
+        name:"激光光源",
+        briefDesc: "基于扫描振镜光学元件",
+        href:"/",
+        img: LightSource,
+    },
+    {
+        name:"Mini宽场显微镜",
+        briefDesc: "基于扫描振镜光学元件",
+        href:"/",
+        img: LightSource,
+    },
+    {
+        name:"全息光镊SLM-HOT",
+        briefDesc: "基于扫描振镜光学元件",
+        href:"/",
+        img: LightSource,
+    },
+    {
+        name:"双光阱光镊GW-DOT",
+        briefDesc: "基于扫描振镜光学元件",
+        href:"/",
+        img: LightSource,
+    },
+    {
+        name:"四通道数字光处理投影系统FC-DLP",
+        briefDesc: "基于扫描振镜光学元件",
+        href:"/",
+        img: LightSource,
+    },
+    {
+        name:"LED光源",
+        briefDesc: "基于扫描振镜光学元件",
+        href:"/",
+        img: LightSource,
+    },
+    {
+        name:"激光光源",
+        briefDesc: "基于扫描振镜光学元件",
+        href:"/",
+        img: LightSource,
+    },
+    {
+        name:"Mini宽场显微镜",
+        briefDesc: "基于扫描振镜光学元件",
+        href:"/",
+        img: LightSource,
+    },
+]
+
+
+export const PARTNERS = [
+    Partner1,
+    Partner2,
+    Partner3,
+    Partner4,
+    Partner5,
+    Partner6,
+    Partner7,
+    Partner8,
+    Partner9,
+    Partner10,
+]
+
+
+export const MENU = [
+    {
+        name:"关于我们",
+        content:[
+            "凯佳简介",
+            "凯佳能力",
+            "人才招聘",
+        ]
+    },
+    {
+        name:"产品中心",
+        content:[
+            "光学显微成像系统",
+            "光学操控",
+            "光源",
+        ]
+    },
+    {
+        name:"技术与服务",
+        content:[
+            "系统方案",
+            "软件服务",
+            "应用案例",
+            "技术支持",
+        ]
+    },
+    {
+        name:"技术与服务",
+        content:[
+            "系统方案",
+            "软件服务",
+            "应用案例",
+            "技术支持",
+        ]
+    },
+    
 ]
