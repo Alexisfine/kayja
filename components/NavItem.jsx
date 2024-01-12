@@ -9,11 +9,14 @@ import { ScrollArea } from './ui/scroll-area'
 function NavItem({category}) {
   const [selectedItem, setSelectedItem] = useState(0)
   const [selectedSubItem, setSelectedSubItem] = useState(null)
+
   
   return (
     <>
       {category.data && (<>
-        <NavigationMenuTrigger>{category.name}</NavigationMenuTrigger>
+        <Link href={category.href}>
+          <NavigationMenuTrigger>{category.name}</NavigationMenuTrigger>
+        </Link>
         <NavigationMenuContent>
             <div className='absolute w-[50vw] top-[52px] rounded-xl border-0 bg-white'>
                 <div className='flex flex-row'>

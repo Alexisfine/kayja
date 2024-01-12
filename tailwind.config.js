@@ -17,6 +17,15 @@ module.exports = {
       },
     },
     extend: {
+      animation:{
+        'pulseslow': 'pulse 15s ease infinite'
+      },
+      boxShadow:{
+        'custom': '0 0 25px 10px rgba(138, 121, 255, 0.9)',
+        'custom2': '0 0 25px 10px rgba(251, 207, 232, 0.9)',
+        'custom3':'0 0 25px 10px rgba(74, 222, 128, 0.9)'
+      },
+
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -66,13 +75,24 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        bg: {
+          '0%, 100%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' }
+        }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        bg: 'bg 12s ease infinite'
       },
       rotate: {
         180:'180deg'
+      },
+      backgroundImage: {
+        'gradient-bg': 'linear-gradient(-45deg, #4158D0, #e560dc, #ffbb37, #ef5f5f, #d8406b)'
+      },
+      backgroundSize:{
+        '400%': '400% 400%'
       }
     },
   },

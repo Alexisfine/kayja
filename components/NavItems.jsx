@@ -4,6 +4,7 @@ import React from 'react'
 import { NavigationMenuItem} from './ui/navigation-menu'
 import { NAV_MENU_ITEMS } from '@/config'
 import NavItem from './NavItem'
+import Link from 'next/link'
 
 function NavItems() {
   return (
@@ -13,7 +14,7 @@ function NavItems() {
                 <ul className='flex flex-row'>
                     {NAV_MENU_ITEMS.map(category => (
                         <NavigationMenuItem key={category.name} className=''>
-                            <NavItem category={category}/>
+                                <NavItem category={category}/>
                         </NavigationMenuItem>
                     ))}
                 </ul>

@@ -20,10 +20,12 @@ const perks = [
 
 function AboutUs() {
   return (
-    <div className='mx-3'>
+    <div className='m-3 p-5 w-full rounded-lg bg-white'>
+      
+
         <div>
           <h1 className='top-1 font-semibold md:pl-0 text-2xl sm:text-3xl'>
-              关于凯佳
+              关于凯佳光科
           </h1>
           <div className='flex flex-col md:flex-row'>
             <div className='flex flex-col'>
@@ -61,5 +63,7 @@ function AboutUs() {
     
   )
 }
+
+
 
 export default AboutUs
